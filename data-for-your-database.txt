@@ -51,8 +51,8 @@ CREATE TABLE `records` (
   `recordID` int(11) NOT NULL,
   `categoryID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `type` varchar(255) NOT NULL,
-  `runtime` int(10) NOT NULL,
+  `release_year` int(11) NOT NULL,
+  `runtime` int(11) NOT NULL,
   `rotten_tomatoes_score` int(4) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -61,19 +61,14 @@ CREATE TABLE `records` (
 -- Dumping data for table `records`
 --
 
-INSERT INTO `records` (`recordID`, `categoryID`, `name`, `price`, `image`) VALUES
-(1, 1, 'Some text', '12.00', '644471.jpg'),
-(2, 1, 'Some text', '15.00', '233012.jpg'),
-(3, 1, 'Some text', '18.00', '329484.jpg'),
-(4, 1, 'Some text', '10.00', '644055.jpg'),
-(5, 2, 'Some text', '16.00', '373465.jpg'),
-(6, 2, 'Some text', '19.00', '373989.jpg'),
-(7, 2, 'Some text', '12.00', '374104.jpg'),
-(8, 2, 'Some text', '10.00', '4733.jpg'),
-(9, 2, 'Some text', '15.00', '834551.jpg'),
-(10, 3, 'Some text', '13.00', '908783.jpg'),
-(11, 3, 'Some text', '17.00', '835545.jpg'),
-(12, 3, 'Some text', '19.00', '119273.jpg');
+INSERT INTO `records` (`recordID`, `categoryID`, `name`, `release_year`, `runtime`, `rotten_tomatoes_score`,`image`) VALUES 
+(1, 1, 'Blades of Glory', 2008, 93, 96, 'blades.jpg'),
+(2, 1, 'Spiderman: No Way Home', 2021, 148, 93 ,'spider.jpg'),
+(3, 2, 'Breaking Bad', 2007, 60, 70, 'breaking.jpg'),
+(4, 2, 'SuperNatural', 2005, 60, 93, 'super.jpg'),
+(5, 3, 'Cowboy Bebop', 1998, 20, 100, 'cowboy.jpg'),
+(6, 3, 'Jojos Bizare Adventure', 2012, 20, 84 'jojo.jpg');
+
 
 --
 -- Indexes for dumped tables

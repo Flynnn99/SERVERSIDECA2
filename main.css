@@ -5,6 +5,7 @@
 body 
 {
     background: #2B3238;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap');
 }
 
 .center
@@ -100,12 +101,21 @@ table
     border: 1px solid black;
     border-collapse: collapse;
 }
-td, th {
-    border: 1px dashed black;
+td, th 
+{
+    
     padding: .2em .5em .2em .5em;
     vertical-align: top;
     text-align: left;
+    border: 1px solid #333;
+    border-bottom: none;
 }
+th
+{
+    background-color: aliceblue;
+    color:#ff737b;
+}
+
 form {
     margin: 0;
 }

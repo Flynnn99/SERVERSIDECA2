@@ -1,11 +1,22 @@
 
-/* the styles for the html elements */
+/* the styles for the html elements */ 
+/*Useful Colours : color: #333; color: #3A7B7f; #aaaaaa color: #2B3238;*/
 
-body {
-    background-color: #ccc;
+body 
+{
+    background: #2B3238;
 }
 
-.container {
+.center
+{
+    text-align: center;
+    color: #ff737b;
+}
+
+
+
+.container 
+{
     /* margin-top: 0; */
     font-family: Arial, Helvetica, sans-serif;
     width: 1000px;
@@ -15,14 +26,16 @@ body {
     padding: .5em 2em;
 }
 
-header {
+header 
+{
     margin: 0;
     border-bottom: 2px solid black;
 }
 header h1 {
     margin: 0;
     padding: .5em 0;
-    color: black;
+    text-align: center;
+    color: #ff737b;
 }
 
 aside {
@@ -74,13 +87,16 @@ li {
     padding: 0;
 }
 a {
-    color: rgb(41, 64, 124);
+    color: #333;
     font-weight: bold;
 }
-a:hover {
-    color: rgb(208, 133, 4);
+a:hover 
+{
+    color: #ff737b;
 }
-table {
+
+table
+ {
     border: 1px solid black;
     border-collapse: collapse;
 }

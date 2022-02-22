@@ -6,4 +6,4 @@
 
 <!-- the body section -->
 <body>
-<header><h1>My PHP CRUD app</h1></header>
+<header><h1>Film and TV Watchlist</h1></header>

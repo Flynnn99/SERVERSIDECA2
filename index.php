@@ -42,11 +42,10 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Record List</h1>
+<h1 class="center">Records</h1>
 
 <aside>
 <!-- display a list of categories -->
-<h2>Categories</h2>
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
@@ -66,15 +65,22 @@ include('includes/header.php');
 <tr>
 <th>Image</th>
 <th>Name</th>
-<th>Price</th>
+<th>Release</th>
+<th>Runtime</th>
+<th>Rotten Tomatoes Score</th>
+<th></th>
 <th>Delete</th>
 <th>Edit</th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+
 <td><?php echo $record['name']; ?></td>
-<td class="right"><?php echo $record['price']; ?></td>
+<td class="right"><?php echo $record['release_year']; ?></td>
+<td class="right"><?php echo $record['runtime']; ?> </td> 
+<td class="right"><?php echo $record['rotten_tomatoes_score']; ?> </td>
+<td class="right"></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
 <input type="hidden" name="record_id"
@@ -94,8 +100,10 @@ value="<?php echo $record['categoryID']; ?>">
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add Record</a></p>
-<p><a href="category_list.php">Manage Categories</a></p>
+<p class="button">
+    <a href="add_record_form.php">Add Record</a>
+    <a href="category_list.php">Manage Categories</a>
+</p>
 </section>
 <?php
 include('includes/footer.php');

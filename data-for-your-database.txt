@@ -37,9 +37,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Category 1'),
-(2, 'Category 2'),
-(3, 'Category 3');
+(1, 'Films'),
+(2, 'TV_Shows'),
+(3, 'Anime');
 
 -- --------------------------------------------------------
 
@@ -51,7 +51,9 @@ CREATE TABLE `records` (
   `recordID` int(11) NOT NULL,
   `categoryID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `runtime` int(10) NOT NULL,
+  `rotten_tomatoes_score` int(4) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

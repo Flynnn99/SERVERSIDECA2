@@ -42,17 +42,17 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1 class="center">Records</h1>
+
 
 <aside>
 <!-- display a list of categories -->
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
-<li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+<h1><li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
 </a>
-</li>
+</li></h1>
 <?php endforeach; ?>
 </ul>
 </nav>          
@@ -68,7 +68,6 @@ include('includes/header.php');
 <th>Release</th>
 <th>Runtime</th>
 <th>Rotten Tomatoes Score</th>
-<th></th>
 <th>Delete</th>
 <th>Edit</th>
 </tr>
@@ -80,7 +79,6 @@ include('includes/header.php');
 <td class="right"><?php echo $record['release_year']; ?></td>
 <td class="right"><?php echo $record['runtime']; ?> </td> 
 <td class="right"><?php echo $record['rotten_tomatoes_score']; ?> </td>
-<td class="right"></td>
 
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">

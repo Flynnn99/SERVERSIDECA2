@@ -3,11 +3,16 @@
 // Get the product data
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
-$price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+$release_year = filter_input(INPUT_POST, 'release_year', FILTER_VALIDATE_INT);
+$runtime = filter_input(INPUT_POST, 'runtime', FILTER_VALIDATE_INT);
+$rotten_tomatoes_score = filter_input(INPUT_POST, 'rotten_tomatoes_score', FILTER_VALIDATE_INT);
 
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-    $name == null || $price == null || $price == false ) {
+    $name == null || $release_year == null || $release_year  == false 
+    || $runtime == null || $runtime == false
+    || $rotten_tomatoes_score == null || $rotten_tomatoes_score == false 
+    ) {
     $error = "Invalid product data. Check all fields and try again.";
     include('error.php');
     exit();
@@ -63,16 +68,20 @@ if ($category_id == null || $category_id == false ||
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, price, image)
+                 (categoryID, name, release_year, runtime, rotten_tomatoes_score, image)
               VALUES
-                 (:category_id, :name, :price, :image)";
+                 (:category_id, :name, :release_year, :runtime, :rotten_tomatoes_score, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
-    $statement->bindValue(':price', $price);
+    $statement->bindValue(':release_year', $release_year);
+    $statement->bindValue(':runtime', $runtime);
+    $statement->bindValue(':rotten_tomatoes_score', $rotten_tomatoes_score);
+
     $statement->bindValue(':image', $image);
     $statement->execute();
     $statement->closeCursor();
+
 
     // Display the Product List page
     include('index.php');

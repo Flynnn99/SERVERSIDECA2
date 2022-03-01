@@ -30,9 +30,18 @@ include('includes/header.php');
             <input type="input" name="name">
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price">
-            <br>        
+            <label>Release Year:</label>
+            <input type="input" name="release_year">
+            <br>   
+            
+            <label>Runtime:</label>
+            <input type="input" name="runtime">
+            <br>  
+
+            <label>Rotten Tomatoes Score:</label>
+            <input type="input" name="rotten_tomatoes_score">
+            <br>  
+            
             
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />

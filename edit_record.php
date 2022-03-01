@@ -4,12 +4,17 @@
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
-$price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+$release_year = filter_input(INPUT_POST, 'release_year', FILTER_VALIDATE_INT);
+$runtime = filter_input(INPUT_POST, 'runtime', FILTER_VALIDATE_INT);
+$rotten_tomatoes_score = filter_input(INPUT_POST, 'rotten_tomatoes_score', FILTER_VALIDATE_INT);
 
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
-$category_id == FALSE || empty($name) ||
-$price == NULL || $price == FALSE) {
+$category_id == FALSE || empty($name)|| $release_year == NULL || $release_year  == FALSE 
+|| $runtime == NULL || $runtime == FALSE
+|| $rotten_tomatoes_score == NULL || $rotten_tomatoes_score == FALSE
+) 
+{
 $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
 } else {
@@ -51,13 +56,17 @@ require_once('database.php');
 $query = 'UPDATE records
 SET categoryID = :category_id,
 name = :name,
-price = :price,
+release_year = :release_year,
+runtime = :runtime,
+rotten_tomatoes_score = :rotten_tomatoes_score,
 image = :image
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':name', $name);
-$statement->bindValue(':price', $price);
+$statement->bindValue(':release_year', $release_year);
+$statement->bindValue(':runtime', $runtime);
+$statement->bindValue(':rotten_tomatoes_score', $rotten_tomatoes_score);
 $statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();

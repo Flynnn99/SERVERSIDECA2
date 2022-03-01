@@ -27,8 +27,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `categories`
 --
 
+DROP DATABASE IF EXIST film_watch_list;
+CREATE DATABASE film_watch_list;
+
 CREATE TABLE `categories` (
-  `categoryID` int(11) NOT NULL,
+  `categoryID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT, 
   `categoryName` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -48,7 +51,7 @@ INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
 --
 
 CREATE TABLE `records` (
-  `recordID` int(11) NOT NULL,
+  `recordID` int(11) PRIMARY KEY NOT NULL AUTO INCREMENT,
   `categoryID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `release_year` int(11) NOT NULL,

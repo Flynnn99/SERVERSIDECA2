@@ -33,9 +33,19 @@ include('includes/header.php');
                    value="<?php echo $records['name']; ?>">
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price"
-                   value="<?php echo $records['price']; ?>">
+            <label>Release Year:</label>
+            <input type="input" name="release_year"
+                   value="<?php echo $records['release_year']; ?>">
+            <br>
+
+            <label>Runtime:</label>
+            <input type="input" name="runtime"
+                   value="<?php echo $records['runtime']; ?>">
+            <br>
+
+            <label>Rotten Tomatoes Score:</label>
+            <input type="input" name="rotten_tomatoes_score"
+                   value="<?php echo $records['rotten_tomatoes_score']; ?>">
             <br>
 
             <label>Image:</label>

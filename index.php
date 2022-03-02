@@ -49,18 +49,24 @@ include('includes/header.php');
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
-<h1><li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+<h1>
+    <li><a class="active" href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
-</a>
-</li></h1>
+    </a>
+    </li>
+</h1>
 <?php endforeach; ?>
 </ul>
 </nav>          
 </aside>
 
+
+
 <section>
 <!-- display a table of records -->
 <h2><?php echo $category_name; ?></h2>
+
+<div class="table-container">
 <table>    
 <tr class="tablehead">
 <th>Image</th>
@@ -101,6 +107,7 @@ value="<?php echo $record['categoryID']; ?>">
 </tr>
 <?php endforeach; ?>
 </table>
+</div>
 <p class="button">
     <a href="add_record_form.php">Add Record</a>
     <a href="category_list.php">Manage Categories</a>

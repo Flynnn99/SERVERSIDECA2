@@ -2,9 +2,10 @@
 /*Header*/
 header {
   margin: 0;
-  background-color: #000000;
+  background-color: #2B3238;
   color: #ff737b;
   font-family: 'Montserrat', sans-serif;
+  height: 200px;
 }
 
 header h1 {
@@ -15,50 +16,10 @@ header h1 {
 }
 
 /*navBar*/
-aside {
-  float: left;
-  width: 150px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-nav ul li {
-  padding-bottom: 0.5em;
-}
-
-section {
-  float: left;
-  width: 800PX;
-  padding-bottom: 1.5em;
-}
-
-ul {
-  margin: 0 0 1em 0;
-  padding: 0 0 0 2.5em;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: #333;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #ff737b;
-}
-
 /*Body*/
 body {
   background: #fff;
-  font-family: Monsterrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .center {
@@ -70,7 +31,6 @@ body {
   /* margin-top: 0; */
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid #333;
   padding: .5em 2em;
 }
 

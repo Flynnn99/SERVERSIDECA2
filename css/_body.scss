@@ -12,13 +12,9 @@ body
     text-align: center;
     color: #ff737b;
 }
-
-
-
 .container 
 {
     /* margin-top: 0; */
-    width: 1000px;
     margin: 0 auto;
     padding: .5em 2em;
 }
@@ -39,30 +35,56 @@ h1, h2
     color: #333;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+/*Table CSS*/
+.table-container
+{
+    margin: 0 auto;
+    height:auto;
+    width:1000px;
+    border: thin solid #aaaaaa;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background: #eee;
+}
 
+    thead 
+    {
+        background-color: $dark_grey;
+        color: #ff737b;
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    tbody tr 
+    {
+        height: 3em;
+    }
+
+    thead th,
+    tbody td 
+    {
+        padding: 5px;
+    }
+
+    tbody tr:nth-child(odd) 
+    {
+        background-color: #eee;
+    }
+
+    tbody tr:nth-child(even) 
+    {
+        background-color: $turqioise;
+    }
+    table 
+    {
+        width: 100%;
+        border-collapse: collapse;
+        border-bottom: 2px solid #3A7B7f;
+        text-align: center;
+    
+    }
 /********************************************************************
 * Additional styles for the record Manager application
 ********************************************************************/

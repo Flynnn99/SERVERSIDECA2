@@ -46,18 +46,24 @@ include('includes/header.php');
 
 <aside>
 <!-- display a list of categories -->
-<nav>
-<ul>
+<nav id="nav"> 
+    <ul>
 <?php foreach ($categories as $category) : ?>
-<h1>
+
     <li><a class="active" href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
     </a>
     </li>
-</h1>
 <?php endforeach; ?>
 </ul>
-</nav>          
+<!-- <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div> -->
+</nav>        
 </aside>
 
 
@@ -74,8 +80,8 @@ include('includes/header.php');
 <th>Release</th>
 <th>Runtime</th>
 <th>Rotten Tomatoes Score</th>
-<th>Delete</th>
-<th>Edit</th>
+<th></th>
+<th></th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr class="tbody">

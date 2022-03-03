@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="./css/mainstyle.css">
 <!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"/> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 
 
 <style>
@@ -15,4 +16,23 @@
 
 <!-- the body section -->
 <body>
-<header><h1>Film and TV Watchlist</h1></header>
+<header>
+    <h1 class = "font-effect-neon2">Film and TV Watchlist</h1> 
+<aside>
+<nav id="nav"> 
+<form class="form">
+    <input type="text" placeholder ="search"/>
+</form>
+    <ul>
+<?php foreach ($categories as $category) : ?>
+
+    <li><a class="active" href=".?category_id=<?php echo $category['categoryID']; ?>">
+<?php echo $category['categoryName']; ?>
+    </a>
+    </li>
+<?php endforeach; ?>
+</ul>
+
+</nav>     
+</aside>  
+</header>

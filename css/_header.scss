@@ -2,18 +2,24 @@
 
 header 
 {
-    margin: 0;
+    
     background-color: $dark_grey;
     color: $usual_pink;
     font-family: 'Montserrat', sans-serif;
-    height: 200px;
+    height: 150px;
 
  h1 
  {
-    margin: 0;
-    padding: .5em 0;
+    
     text-align: center;
-    color: #ff737b;
+    color: $turqioise;
+    font-size: 30px;
+}
+
+.font-effect-neon2
+{
+    text-shadow: 0 0 0.1em #FFFF00, 0 0 0.2em #FFFF33, 0 0 0.3em #F2EA02, 0 0 0.4em #E6FB04, 0 0 0.6em #ff737b, 0 0 0.8em #ff737b, 0 0 1em #ff737b, 0 0 1.2em #ff737b;
+    color: #fff;
 }
 
 }

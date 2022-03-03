@@ -2,20 +2,20 @@
 
 body 
 {
-    background: #fff;
+    background: $white;
     font-family: 'Montserrat', sans-serif;
 
 
 }
+
 .center
 {
     text-align: center;
-    color: #ff737b;
+    color: $usual_pink;
 }
 .container 
 {
-    /* margin-top: 0; */
-    margin: 0 auto;
+
     padding: .5em 2em;
 }
 
@@ -32,7 +32,30 @@ h2 {
 }
 h1, h2 
 {
-    color: #333;
+    color: $alt-black;
+}
+.catName
+{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    text-shadow: 0 0 0.1em #FFFF00, 0 0 0.2em #FFFF33, 0 0 0.3em #F2EA02, 0 0 0.4em #E6FB04, 0 0 0.6em #ff737b, 0 0 0.8em #ff737b, 0 0 1em #ff737b, 0 0 1.2em #ff737b;
+    color: $white;
+}
+
+.buttons a
+{
+text-align: left;
+color: $alt-black;
+text-decoration: none;
+
+}
+
+.buttons a:hover
+{
+color: $usual_pink;
+
+
 }
 
 /*Table CSS*/
@@ -84,6 +107,40 @@ h1, h2
         border-bottom: 2px solid #3A7B7f;
         text-align: center;
     
+    }
+    .del_btn
+    {
+        border: 3px solid $del_red;
+        height: 60px;
+        width: 70px;
+        background-color: transparent;
+        color: $alt-black;
+        padding: 5%;
+        font-size: 20px;
+        border-radius: 10%;
+    }
+
+    .ed_btn
+    {
+        border: 3px solid $ed_green;
+        height: 60px;
+        width: 70px;
+        background-color: transparent;
+        color: $alt-black;
+        padding: 5%;
+        font-size: 20px;
+        border-radius: 10%;
+    }
+
+    .ed_btn:hover
+    {
+        background-color: $ed_green;
+        color:$alt-black;
+    }
+    .del_btn:hover
+    {
+        background-color: $del_red;
+        color: $alt-black;
     }
 /********************************************************************
 * Additional styles for the record Manager application

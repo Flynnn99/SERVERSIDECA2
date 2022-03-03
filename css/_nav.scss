@@ -1,21 +1,14 @@
 /*NavBar*/
-aside 
-{
-    margin-top: 3%;
-    margin-bottom: 5%;
-    height: 100px;
-    border-bottom: 3px solid $dark_grey;
-    
-}
 nav{
     text-align: center;
+    color: $usual_pink;
 }
 
 nav ul li 
 {
     padding-bottom:10%;
-    margin-left: 7vw;
-    margin-bottom: 3vh;
+    margin-left: 0.5vw;
+    margin-bottom: 2vh;
 }
 section {
 
@@ -24,8 +17,6 @@ section {
 ul {
     list-style-type: none;
     text-align: center;
-    padding: 3%;
-    margin: 3%;
     overflow: hidden;
     
 
@@ -37,7 +28,7 @@ ul {
   
   li a {
     display: block;
-    color: $dark_grey;
+    color: $usual_pink;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -46,6 +37,16 @@ ul {
 
   }
   
-  li a:hover {
-    color: $turqioise;
+  li a:hover
+   {
+    text-shadow: 0 0 0.1em #fff, 0 0 0.2em #ff737b, 0 0 0.3em #ff737b, 0 0 0.4em #ff737b, 0 0 0.6em #ff737b, 0 0 0.8em #ff737b, 0 0 1em #ff737b, 0 0 1.2em #ff737b;
+    color: #fff;
   }
+  .form
+  {
+    float: right;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+ 

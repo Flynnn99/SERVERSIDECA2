@@ -10,9 +10,16 @@
 2.*Run Apache and SQL through the Xampp Server
 3.*Next Create the films and tv database through phpmyadmin
 4.*Make changes both on the Clientside and Serverside
- ### Enjoy the Website
  
- # Files Needed to Run XAMPP
+ ## Files Needed to Run XAMPP
  ## https://www.apachefriends.org/index.html
+ 
+ 
+ ## Enjoy the Website
+ 
+ ![image](https://user-images.githubusercontent.com/92158849/159126894-c4f83fff-8a31-4b78-85f0-327102768841.png)
+
+ 
+ 
  
 

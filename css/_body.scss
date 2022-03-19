@@ -145,9 +145,12 @@ color: $usual_pink;
 /********************************************************************
 * Additional styles for the record Manager application
 ********************************************************************/
-#add_record_form {
+#add_record_form 
+{
     margin: .5em 0 1em;
+    text-align: center;
 }
+
 #add_record_form label {
     width: 6em;
     padding-right: 1em;
@@ -165,6 +168,7 @@ color: $usual_pink;
     content: "";
     display: table;
     clear: both;
-  }
+}
+
 
   

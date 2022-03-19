@@ -1,5 +1,17 @@
 <?php
 require('database.php');
+$query = 'SELECT *
+          FROM categories
+          ORDER BY categoryID';
+$statement = $db->prepare($query);
+$statement->execute();
+$categories = $statement->fetchAll();
+$statement->closeCursor();
+?>
+
+
+<?php
+require('database.php');
 
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $query = 'SELECT *
@@ -26,31 +38,31 @@ include('includes/header.php');
             <label>Category ID:</label>
             <input type="category_id" name="category_id"
                    value="<?php echo $records['categoryID']; ?>">
-            <br>
+                   <br/><br/><br/><br/>
 
             <label>Name:</label>
             <input type="input" name="name"
                    value="<?php echo $records['name']; ?>">
-            <br>
+                   <br/><br/><br/><br/>
 
             <label>Release Year:</label>
             <input type="input" name="release_year"
                    value="<?php echo $records['release_year']; ?>">
-            <br>
+                   <br/><br/><br/><br/>
 
             <label>Runtime:</label>
             <input type="input" name="runtime"
                    value="<?php echo $records['runtime']; ?>">
-            <br>
+                   <br/><br/>
 
             <label>Rotten Tomatoes Score:</label>
             <input type="input" name="rotten_tomatoes_score"
                    value="<?php echo $records['rotten_tomatoes_score']; ?>">
-            <br>
+                   <br/><br/><br/><br/>
 
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
-            <br>            
+            <br/><br/><br/><br/>          
             <?php if ($records['image'] != "") { ?>
             <p><img src="image_uploads/<?php echo $records['image']; ?>" height="150" /></p>
             <?php } ?>

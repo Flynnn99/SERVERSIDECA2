@@ -17,7 +17,7 @@
  
  ## Enjoy the Website
  
- ![image](https://user-images.githubusercontent.com/92158849/159126894-c4f83fff-8a31-4b78-85f0-327102768841.png)
+ ![gif](https://user-images.githubusercontent.com/92158849/159126894-c4f83fff-8a31-4b78-85f0-327102768841.png)
 
  
  

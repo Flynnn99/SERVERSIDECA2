@@ -1,8 +1,9 @@
 # Michaels Film and TV watchlist
 ![image](https://user-images.githubusercontent.com/92158849/159126571-586f6fe4-8735-4127-a0fc-56f9af2eb818.png)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=https://www.youtube.com/watch?v=_7dr6PCeW4c"><img src="https://www.youtube.com/watch?v=_7dr6PCeW4c" 
-alt="the greatest movie scene of all time" width="240" height="180" border="10" /></a>
+[![Greatest Movie Scene of All Time](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=_7dr6PCeW4c)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_7dr6PCeW4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # A project based on some of my favourite tvshows and movies
 ## Screenshots of the watchlist

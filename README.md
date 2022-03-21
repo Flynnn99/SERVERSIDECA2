@@ -19,8 +19,7 @@
  ## Enjoy the Website
  [Click here to see my Watchlist](https://mysql06.comp.dkit.ie/D00240861/Films/index.php)
  
- ![image](https://user-images.githubusercontent.com/92158849/159126894-c4f83fff-8a31-4b78-85f0-327102768841.png)
-
+ ![shake-and-bake-ricky-bobby](https://user-images.githubusercontent.com/92158849/159341385-9904389c-ab90-4457-977c-fbff50b99984.gif)
  
  
  

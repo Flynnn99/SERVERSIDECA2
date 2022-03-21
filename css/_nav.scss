@@ -18,11 +18,13 @@ ul {
     list-style-type: none;
     text-align: center;
     overflow: hidden;
+    font-size: 10px;
     
 
   }
   
-  li {
+  li 
+  {
     float:left;  
   }
   
@@ -32,10 +34,14 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 10px;
     margin-left: 3%;
 
   }
+  .active
+{
+font-size: 10px;
+}
   
   li a:hover
    {
